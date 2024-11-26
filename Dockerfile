@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-COPY cloudfunction/ cloudfunction/
-
 RUN pip install -r requirements.txt
 
 COPY app.py .
