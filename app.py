@@ -273,11 +273,12 @@ def main():
         print(f"Error procesando el evento: {e}")
 
 if __name__ == "__main__":
+    main()
     # Simula un evento configurando manualmente la variable de entorno
-    os.environ["CE_SUBSCRIBED_EVENT"] = json.dumps({
-        "bucket_name": "poc-asbanc",   # Nombre de tu bucket
-        "object_key": "1. Carta BCP ok.pdf"  # Nombre de tu archivo PDF
-    })
+   # os.environ["CE_SUBSCRIBED_EVENT"] = json.dumps({
+    #    "bucket_name": "poc-asbanc",   # Nombre de tu bucket
+    #    "object_key": "1. Carta BCP ok.pdf"  # Nombre de tu archivo PDF
+   # })
 
     # Ejecutar la función principal
-    main()
+    
