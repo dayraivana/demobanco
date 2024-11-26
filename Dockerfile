@@ -10,4 +10,4 @@ COPY app.py .
 
 EXPOSE 8501
 
-CMD [ "run", "app.py"]
+CMD ["python", "app.py"]
